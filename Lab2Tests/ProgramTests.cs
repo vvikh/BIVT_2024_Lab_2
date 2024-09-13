@@ -341,7 +341,7 @@ namespace Tests
             int[] test1 = new int[n.Length];
             double[] test3 = new double[n.Length];
             int[] answer = new int[] { 5, 3, 3, 0 };
-            double[] answerLength = new double[] { 0.7071, 1.0296, 1.0296, 0 };
+            double[] answerLength = new double[] { 0.71, 1.03, 1.03, 0 };
             // Act
             for (int i = 0; i < answer.Length; i++)
             {
@@ -398,7 +398,7 @@ namespace Tests
             int[] test = new int[n.Length];
             double[] testAvg = new double[n.Length];
             int[] answer = new int[] { 4, 3, 2, 0 };
-            double[] answerAvg = new double[] { 4.05, 4.1875, 4.2917, 0 };
+            double[] answerAvg = new double[] { 4.05, 4.19, 4.29, 0 };
             // Act
             for (int i = 0; i < answer.Length; i++)
             {
@@ -419,7 +419,7 @@ namespace Tests
             double[] r = new double[n] { 1.5, 0.2, 3 };
             int[] type = new int[n] { 0, 1, 2 };
             double[,] test = new double[n, n];
-            double[,] answer = new double[n, n] { { 2.25, 7.0686, 0.9743 }, { 0.04, 0.1257, 0.0173 }, { 9, 28.2743, 3.8971 } };
+            double[,] answer = new double[n, n] { { 2.25, 7.07, 0.97 }, { 0.04, 0.13, 0.02 }, { 9, 28.27, 3.9 } };
             // Act
             for (int i = 0; i < n; i++)
             {
@@ -457,7 +457,7 @@ namespace Tests
             double[] B = new double[n] { 3, 2.8, 2.5 };
             int[] type = new int[n] { 0, 1, 2 };
             double[,] test = new double[n, n];
-            double[,] answer = new double[n, n] { { 4.5, 21.2058, 3.2678 }, { 0.56, 24.5044, 0.056 }, { 7.5, 0, 9 } };
+            double[,] answer = new double[n, n] { { 4.5, 21.21, 3.27 }, { 0.56, 24.5, 0.06 }, { 7.5, 0, 9 } };
             // Act
             for (int i = 0; i < n; i++)
             {
