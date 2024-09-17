@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestPlatform.ObjectModel;
+using Microsoft.VisualStudio.TestPlatform.ObjectModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -117,7 +117,7 @@ namespace Tests
         {
             // Arrange
             double[] r = new double[] { 70, 0.86, 3.2, 3.2, 123.45, 6 };
-            double[] s = new double[] { 36.74, 0.74, 4, 4.5, 12.345, 9 };
+            double[] s = new double[] { 36.74, 0.74, 3.5, 4.5, 12.345, 9 };
             bool[] test = new bool[r.Length];
             bool[] answer = new bool[] { false, false, false, true, false, true };
             // Act
@@ -223,12 +223,14 @@ namespace Tests
             // Arrange
             int n = 5;
             double[] r = new double[] { 3, 1.5, 1 };
+            double[] a = new double[] { 2, 1.5, 3 };
+            double[] b = new double[] { 1, 1, 1 };
             int[] test = new int[r.Length];
-            int[] answer = new int[] { 4, 1, 0 };
+            int[] answer = new int[] { 3, 2, 0 };
             // Act
             for (int i = 0; i < answer.Length; i++)
             {
-                test[i] = main.Task_2_2(n, r[i]);
+                test[i] = main.Task_2_2(n, r[i], a[i], b[i]);
             }
             // Assert
             for (int i = 0; i < answer.Length; i++)
