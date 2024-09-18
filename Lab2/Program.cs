@@ -175,7 +175,7 @@ public class Program
 
         return answer;
     }
-    public double Task_2_3(int n)
+    public int Task_2_2(int n, double r, double a, double b)
     {
         double answer = 0;
 
