@@ -22,7 +22,7 @@ public class Program
         //program.Task_1_10(0.9);
         //program.Task_2_1(10);
         //program.Task_2_2(5, 2);
-        //program.Task_2_3(10);
+        //program.Task_2_3(10, 1, 2);
         //program.Task_2_4(5, 1, 3);
         //program.Task_2_5(10, 30);
         //program.Task_2_6(5);
@@ -175,7 +175,7 @@ public class Program
 
         return answer;
     }
-    public int Task_2_2(int n, double r, double a, double b)
+    public int Task_2_3(int n, double r, double a, double b)
     {
         double answer = 0;
 
