@@ -1,17 +1,15 @@
 # Тесты и ответы для самостоятельной проверки заданий 2 уровня
 
 Чтобы ввод работал корректно, используйте английский формат ввода (через точку). Для этого в методах распознования значений добавьте форматтер **new CultureInfo("en-US")**:
-string input = Console.ReadLine();
-double.TryParse(input, new CultureInfo("en-US"), out age);
-age = double.Parse(input, new CultureInfo("en-US"));
-age = Convert.ToDouble(input, new CultureInfo("en-US"));
-
+string input = Console.ReadLine();\
+double.TryParse(input, new CultureInfo("en-US"), out age);\
+age = double.Parse(input, new CultureInfo("en-US"));\
+age = Convert.ToDouble(input, new CultureInfo("en-US"));\
 Или же вводите значения через запятую: 
 ```
 1,2
 0,7
 ```
-и т. д.
 
 ## Задание 2_1
 Скопируйте и вставьте в консоль первые ``n`` значений из списка:
